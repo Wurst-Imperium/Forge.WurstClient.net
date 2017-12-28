@@ -1,0 +1,105 @@
+---
+title: Minecraft ForgeWurst Hacked Client Downloads
+description: ForgeWurst downloads for all Minecraft versions
+permalink: /download/
+mcversions:
+  - "1.12.2"
+  - "1.10.2"
+  - "all"
+---
+{% include title.html l1 = page.title l2 = page.description %}
+
+<div class="padding20 no-padding-left no-padding-right">
+  <div class="container post-content">
+
+		<!-- ForgeWurst -->
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="8325128101" data-ad-format="auto"></ins>
+		</div>
+
+    {% for mcversion in page.mcversions %}
+
+      <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
+        <h2 class="text-light">
+          {% if mcversion == "all" %}
+            Latest Updates
+          {% else %}
+            ForgeWurst for Minecraft {{ site.mcversions[mcversion] }}
+          {% endif %}
+        </h2>
+      </div>
+
+      <div class="grid padding10">
+        <div class="row cells4">
+
+          {% assign i = 0 %}
+          {% for update in site.updates reversed %}
+
+            {% unless mcversion == "all" or update.minecraft-versions contains mcversion %}
+              {% continue %}
+            {% endunless %}
+
+            <div class="cell">
+              <a href="{{ update.url }}">
+                <div class="image-container">
+                  <div class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+                    <img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
+                    {% unless update.image %}
+                      <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
+                    {% endunless %}
+                  </div>
+                  <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                    <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+                      <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <h3 class="sub-header">
+                <a href="{{ update.url }}">{{ update.title }}</a>
+              </h3>
+            </div>
+
+            {% assign i = i | plus: 1 %}
+            {% if i >= 3 %}
+              {% break %}
+            {% endif %}
+
+          {% endfor %}
+
+          <div class="cell">
+            {% if mcversion == "all" %}
+              {% capture allversions %}all/{% endcapture %}
+            {% else %}
+              {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
+            {% endif %}
+            <a href="{{ allversions }}">
+              <div class="image-container">
+                <div class="frame bg-grayLighter set-border tile-content iconic">
+                  <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" alt="(placeholder)" class="no-visible">
+                  <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
+                </div>
+                <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                  <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+                    <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h3 class="sub-header">
+              <a href="{{ allversions }}">All Versions</a>
+            </h3>
+          </div>
+
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+</div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

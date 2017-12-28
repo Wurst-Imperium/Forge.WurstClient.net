@@ -1,0 +1,44 @@
+exclude:
+- start.bat
+
+timezone: Europe/Berlin
+
+title: WurstClient.net
+
+mcversions:
+  "1.12.2": "1.12.2 + Forge 2555"
+  "1.10.2": "1.10.2 + Forge 2185"
+
+collections:
+  updates:
+    output: true
+    permalink: /updates/:slug/
+  tutorials:
+    output: true
+    permalink: /tutorials/:slug/
+  redirects:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author: Alexander01998
+  - scope:
+      path: ""
+      type: updates
+    values:
+      layout: update
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: tutorial
+  - scope:
+      path: ""
+      type: redirects
+    values:
+      layout: redirect

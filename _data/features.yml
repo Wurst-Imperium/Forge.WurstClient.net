@@ -1,0 +1,37 @@
+cheats:
+  - AutoSprint
+  - AutoSwim
+  - AutoWalk
+  - ChestESP
+  - ClickGUI
+  - FastPlace
+  - Flight
+  - Freecam
+  - Fullbright
+  - ItemESP
+  - Killaura
+  - MobESP
+  - NoFall
+  - NoWeb
+  - Nuker
+  - PlayerESP
+  - RainbowUI
+  - Sneak
+  - Spider
+  - Timer
+
+commands:
+  - .binds
+  - .clear
+  - .gm
+  - .help
+  - .say
+  - .setcheckbox
+  - .setenum
+  - .setslider
+  - .t
+  - .taco
+  - .vclip
+
+other:
+  - HackList

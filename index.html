@@ -1,0 +1,161 @@
+---
+title: ForgeWurst BETA - Minecraft Forge Hacked Client
+---
+<div class="padding100 no-padding-left no-padding-right" style="background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;background-image: url('https://cloud.githubusercontent.com/assets/10100202/23873355/10327052-0832-11e7-9bf7-7d5a8dfba013.png');">
+	<div class="container align-center">
+		<h1>
+			<img src="https://cloud.githubusercontent.com/assets/10100202/23872350/47e8462e-082e-11e7-8ac2-07a66e4beaaa.png" alt="{{ page.title }}">
+		</h1>
+		<p>
+			<a class="command-button primary shadow" href="/download/" style="padding-top: 1rem;padding-bottom: 1rem;">
+				<span class="icon mif-download2"></span>
+				Download ForgeWurst
+			</a>
+		</p>
+	</div>
+</div>
+<div class="padding40 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container align-center">
+		{% assign features = site.data.features %}
+		<h2>Features ({{ features.cheats.size | plus: features.commands.size | plus: features.other.size }})</h2>
+	</div>
+</div>
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<div class="grid">
+			<div class="row">
+				<h3>Cheats ({{ features.cheats.size }})</h3>
+			</div>
+			<div class="row cells5">
+				{% assign colsize = features.cheats.size | divided_by: 5.0 | ceil %}
+				{% for i in (0..4) %}
+					<div class="cell">
+						<ul>
+							{% for i2 in (1..colsize) %}
+								{% assign i3 = i | times: colsize | plus: i2 | minus: 1 %}
+								{% if i3 >= features.cheats.size %}
+									{% break %}
+								{% endif %}
+								<li>{{ features.cheats[i3] }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<div class="grid">
+			<div class="row">
+				<h3>Commands ({{ features.commands.size }})</h3>
+			</div>
+			<div class="row cells5">
+				{% assign colsize = features.commands.size | divided_by: 5.0 | ceil %}
+				{% for i in (0..4) %}
+					<div class="cell">
+						<ul>
+							{% for i2 in (1..colsize) %}
+								{% assign i3 = i | times: colsize | plus: i2 | minus: 1 %}
+								{% if i3 >= features.commands.size %}
+									{% break %}
+								{% endif %}
+								<li>{{ features.commands[i3] }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<div class="grid">
+			<div class="row">
+				<h3>Other Features ({{ features.other.size }})</h3>
+			</div>
+			<div class="row cells5">
+				{% assign colsize = features.other.size | divided_by: 5.0 | ceil %}
+				{% for i in (0..4) %}
+					<div class="cell">
+						<ul>
+							{% for i2 in (1..colsize) %}
+								{% assign i3 = i | times: colsize | plus: i2 | minus: 1 %}
+								{% if i3 >= features.other.size %}
+									{% break %}
+								{% endif %}
+								<li>{{ features.other[i3] }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<div class="grid">
+			<div class="row">
+				<h2 class="align-center">Default Keybinds (9)</h2>
+			</div>
+			<div class="row cells3">
+				<div class="cell">
+					<ul>
+						<li>B -> FastPlace</li>
+						<li>C -> Fullbright</li>
+						<li>G -> Flight</li>
+					</ul>
+				</div>
+				<div class="cell">
+					<ul>
+						<li>LCONTROL -> ClickGUI</li>
+						<li>N -> Nuker</li>
+						<li>R -> Killaura</li>
+					</ul>
+				</div>
+				<div class="cell">
+					<ul>
+						<li>RSHIFT -> ClickGUI</li>
+						<li>U -> Freecam</li>
+						<li>Z -> Sneak</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<div class="grid">
+			<div class="row">
+				<h2 class="align-center">Compatibility</h2>
+			</div>
+			<div class="row">
+				<table class="table border bordered">
+					<thead>
+						<tr>
+							<th>ForgeWurst Edition</th>
+							<th>Minecraft Versions</th>
+							<th>Recommended Forge Version</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ForgeWurst MC 1.12.2</td>
+							<td>1.12.2</td>
+							<td>1.12.2-14.23.1.2555</td>
+						</tr>
+						<tr>
+							<td>ForgeWurst MC 1.10.2</td>
+							<td>1.10.2</td>
+							<td>1.10.2-12.18.3.2185</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+---
+layout: none
+---
+{
+  "homepage": "https://forge.wurstclient.net/download/",{% for mcversion in site.mcversions %}
+  "{{ mcversion[0] }}": {{ "{" }}{% for update in site.updates %}{% unless update.minecraft-versions contains mcversion[0] %}{% continue %}{% endunless %}
+      "{{ update.wurst-version }}": "changelog"{% unless forloop.last %},{% endunless %}{% endfor %}
+  },{% endfor %}
+  "promos": {{ "{" }}{% for mcversion in site.mcversions %}{% for update in site.updates reversed %}{% if update.minecraft-versions contains mcversion[0] %}
+    "{{ mcversion[0] }}-recommended": "{{ update.wurst-version }}",
+    "{{ mcversion[0] }}-latest": "{{ update.wurst-version }}"{% break %}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
+  }
+}
