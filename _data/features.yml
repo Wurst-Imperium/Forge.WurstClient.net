@@ -2,8 +2,11 @@ cheats:
   - AutoSprint
   - AutoSwim
   - AutoWalk
+  - Blink
   - ChestESP
   - ClickGUI
+  - FastBreak
+  - FastLadder
   - FastPlace
   - Flight
   - Freecam
@@ -12,6 +15,7 @@ cheats:
   - Killaura
   - MobESP
   - NoFall
+  - NoHurtcam
   - NoWeb
   - Nuker
   - PlayerESP
