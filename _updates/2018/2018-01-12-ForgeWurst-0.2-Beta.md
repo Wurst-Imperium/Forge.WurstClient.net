@@ -1,5 +1,5 @@
 ---
-title: ForgeWurst 0.2 Beta
+title: ForgeWurst 0.2 Beta - Blink, FastBreak & More
 wurst-version: "0.2"
 minecraft-versions:
   - "1.12.2"
