@@ -1,6 +1,7 @@
 cheats:
   - AutoSprint
   - AutoSwim
+  - AutoTool
   - AutoWalk
   - Blink
   - ChestESP
@@ -23,6 +24,7 @@ cheats:
   - Sneak
   - Spider
   - Timer
+  - Tunneller
 
 commands:
   - .binds

@@ -6,7 +6,7 @@ timezone: Europe/Berlin
 title: WurstClient.net
 
 mcversions:
-  "1.12.2": "1.12.2 + Forge 2555"
+  "1.12.2": "1.12.2 + Forge 2611"
   "1.10.2": "1.10.2 + Forge 2185"
 
 collections:
