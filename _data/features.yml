@@ -25,6 +25,7 @@ cheats:
   - Spider
   - Timer
   - Tunneller
+  - X-Ray
 
 commands:
   - .binds
