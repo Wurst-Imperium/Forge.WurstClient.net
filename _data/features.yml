@@ -1,5 +1,6 @@
 cheats:
   - AutoArmor
+  - AutoFarm
   - AutoSprint
   - AutoSwim
   - AutoTool
@@ -24,6 +25,7 @@ cheats:
   - NoWeb
   - Nuker
   - PlayerESP
+  - Radar
   - RainbowUI
   - Sneak
   - Spider
