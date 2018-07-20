@@ -45,6 +45,7 @@ commands:
   - .t
   - .taco
   - .vclip
+  - .vrtweaks
 
 other:
   - HackList
