@@ -1,6 +1,7 @@
 cheats:
   - AutoArmor
   - AutoFarm
+  - AutoFish
   - AutoSprint
   - AutoSwim
   - AutoTool
@@ -20,6 +21,7 @@ cheats:
   - Jesus
   - Killaura
   - MobESP
+  - MobSpawnESP
   - NoFall
   - NoHurtcam
   - NoWeb
