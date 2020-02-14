@@ -11410,12 +11410,3 @@ $.widget( "metro.wizard2" , {
 
 /* custom Wurst-Imperium scripts */
 
-// Anti-AdBlock script
-$(function() {
-  var ad = $('[data-ad-client="ca-pub-5218363098774955"]');
-  if(!ad.length)
-    return;
-  if(ad.css('display') === 'none') {
-    $('.post-content').html("You must disable AdBlock to view this content.");
-  }
-});
