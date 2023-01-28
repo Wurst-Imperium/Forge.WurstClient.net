@@ -1,6 +1,9 @@
 exclude:
 - start.bat
 
+gems:
+  - jekyll-sitemap
+
 timezone: Europe/Berlin
 
 title: WurstClient.net
