@@ -5,8 +5,8 @@ gems:
   - jekyll-sitemap
 
 timezone: Europe/Berlin
-
 title: WurstClient.net
+url: "https://forge.wurstclient.net"
 
 mcversions:
   "1.12.2": "1.12.2 + Forge 2705"
